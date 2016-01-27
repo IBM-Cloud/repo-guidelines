@@ -2,7 +2,7 @@
 
 This repository is meant to serve as the official guidelines for creating sample app source code repositories within the IBM-Bluemix organization. The driving force behind this is an effort to standardize our open-source content to create a more cohesive brand experience across samples.
 
-**Note:** Many of the links in the links in the guide point to sites on the IBM intranet. Apologies to non-IBMers, this is as transparent as we can get :)
+**Note:** Some of the links in the guide point to sites on the IBM intranet. Apologies to non-IBMers, this is as transparent as we can get :)
 
 ## Update Instructions
 To update the guidelines, please fork the repository, make changes, and create a pull request. When making any changes to the Word doc, please be sure to update the accompanying PDF file. Also, when updating one of the sample READMEs, update the other sample versions where applicable.
