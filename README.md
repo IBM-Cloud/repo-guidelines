@@ -1,5 +1,26 @@
 #IBM-Bluemix Repo Guidelines
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Value Add](#value-add)
+- [Sample Types](#sample-types)
+- [README.md Structure](#readmemd-structure)
+- [Dependencies](#dependencies)
+- [Legal Compliance](#legal-compliance)
+- [Design](#design)
+- [Architecture Diagram](#architecture-diagram)
+- [Marketing Copy (large apps only)](#marketing-copy-large-apps-only)
+- [Deployment Tracker](#deployment-tracker)
+- [Deploy-to-Bluemix (D2B) Button](#deploy-to-bluemix-d2b-button)
+- [Discovery JSON Document](#discovery-json-document)
+- [CoreMetrics Links](#coremetrics-links)
+  - [How to View Raw Data](#how-to-view-raw-data)
+- [Contributing updates to the guidelines](#contributing-updates-to-the-guidelines)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 This repository is meant to serve as the official guidelines for creating sample app source code
 repositories within the IBM-Bluemix organization. The driving force behind this is an effort to
 standardize our open-source content to create a more cohesive brand experience across samples.
@@ -11,7 +32,7 @@ their corresponding sections in this document.
 **Note:** Some of the links in the guide point to sites on the IBM intranet.
 Apologies to non-IBMers, this is as transparent as we can get :)
 
-# Value Add
+## Value Add
 
 Any demos placed within the IBM Bluemix GitHub organization need to be reviewed to ensure they
 add value to the overall repository. This is needed to guarantee superior quality projects and
