@@ -1,5 +1,18 @@
 #IBM-Bluemix Repo Guidelines
 
+This repository is meant to serve as the official guidelines for creating sample app source code
+repositories within the IBM-Bluemix organization. The driving force behind this is an effort to
+standardize our open-source content to create a more cohesive brand experience across samples.
+
+Note that at the moment, these are evolving and  fluid guidelines. There is continuous development
+being done on some of the artifacts mentioned in this guide and as they are updated, so too will 
+their corresponding sections in this document.
+
+**Note:** Some of the links in the guide point to sites on the IBM intranet.
+Apologies to non-IBMers, this is as transparent as we can get :)
+
+---
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -20,17 +33,6 @@
 - [Contributing updates to the guidelines](#contributing-updates-to-the-guidelines)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-This repository is meant to serve as the official guidelines for creating sample app source code
-repositories within the IBM-Bluemix organization. The driving force behind this is an effort to
-standardize our open-source content to create a more cohesive brand experience across samples.
-
-Note that at the moment, these are evolving and  fluid guidelines. There is continuous development
-being done on some of the artifacts mentioned in this guide and as they are updated, so too will 
-their corresponding sections in this document.
-
-**Note:** Some of the links in the guide point to sites on the IBM intranet.
-Apologies to non-IBMers, this is as transparent as we can get :)
 
 ## Value Add
 
