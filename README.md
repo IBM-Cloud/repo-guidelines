@@ -90,25 +90,20 @@ should include a subset of the following:
   
   * **Run the app on Bluemix**: If the sample app is anything more than a “Hello World” include instructions
   on how to deploy a new instance to Bluemix. This should be done by giving either:
-    1. A Deploy to Bluemix button. The button itself is included by putting your Git repository URL
-    in your package.json file and placing the below code into your README markdown. Currently, only CF
-    apps are supported, with container and VM support coming in the future. If any additional steps
-    are required to set up the app after using the D2B button, please note these as well.
-    ```
-    [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy)
-    ```
-    
-    1. Instructions on how to deploy the app to Bluemix after cloning the repo. Assume little to
-    no prior Bluemix experience.
-      * Needs to have sanity checks at about every 20 steps
-      * Think accessibility first. If any tools are used (i.e. the CF CLI), briefly explain what
-      the tools are for and how they are used.
-      * Avoid directly referencing Bluemix UI components here; doing this helps avoid ACE changes
-      invalidating your README
-      * This section tends to be large and/or subject to changes. In order to limit the changes 
-      needed for your README, you can choose to:
-        * Embed steps in another Instructions.md file and link there
-        * Include a link to a tutorial hosted on a separate site (i.e. developerWorks or Bluemix Docs) instead
+
+  * **A Deploy to Bluemix button**: The button itself is included by putting your Git repository URL in your package.json file and placing the below code into your README markdown. Currently, only CF apps are supported, with container and VM support coming in the future. If any additional steps are required to set up the app after using the D2B button, please note these as well.
+
+  ```
+  [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy)
+  ```
+
+  * **Deployment Instructions**: Instructions on how to deploy the app to Bluemix after cloning the repo. Assume little to no prior Bluemix experience.
+    * Needs to have sanity checks at about every 20 steps
+    * Think accessibility first. If any tools are used (i.e. the CF CLI), briefly explain what the tools are for and how they are used.
+    * Avoid directly referencing Bluemix UI components here; doing this helps avoid ACE changes invalidating your README
+    * This section tends to be large and/or subject to changes. In order to limit the changes  needed for your README, you can choose to:
+      * Embed steps in another Instructions.md file and link there
+      * Include a link to a tutorial hosted on a separate site (i.e. developerWorks or Bluemix Docs) instead
 
   *	**Run the app locally**: If applicable, include instructions on how to run the app on a user’s local machine.
   Recommended for Demos and apps of similar to lower complexity.
