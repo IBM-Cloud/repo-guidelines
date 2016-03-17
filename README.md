@@ -27,6 +27,7 @@ Apologies to non-IBMers, this is as transparent as we can get :)
 - [Marketing Copy (large apps only)](#marketing-copy-large-apps-only)
 - [Deployment Tracker](#deployment-tracker)
 - [Deploy-to-Bluemix (D2B) Button](#deploy-to-bluemix-d2b-button)
+- [OpenWhisk Examples](#openwhisk-examples)
 - [Discovery JSON Document](#discovery-json-document)
 - [CoreMetrics Links](#coremetrics-links)
   - [How to View Raw Data](#how-to-view-raw-data)
@@ -60,6 +61,7 @@ of increasing complexity:
 |Sample App                 |Developers, Solution Architects              |These are the apps that exhibit Bluemix use cases, with 1-3 services and a beautiful front end. Blog posts with tutorials normally accompany these and they are used to show off at conferences and large external events.|
 |Demo                       |Tech Sellers, Developers, Solution Architects|Fully fleshed out samples that showcase vital enterprise functionality within a Bluemix app or multiple apps. They generally have accompanying scripts for pitching to enterprise clients with live-coding portions. For a guide on Bluemix demo strategy, please see the [overview on Release Blueprints](https://releaseblueprints.ibm.com/display/CLOUDOE/Bluemix+Demo+Strategy).|
 |Reference Architecture Apps|Tech Sellers/Solution Architects             |Built by the Guided Experience and Reference Architecture teams, these apps demonstrate enterprise pattern solutions using Bluemix. They generally involve multiple apps and services communicating with each other using various protocols in order to make up a larger system.|
+|OpenWhisk                  | Developers                                  |OpenWhisk examples can include either actions, events, triggers, packages, or feeds. Actions are either simple one-file `.js` or `.swift` examples or Docker images. Events, triggers, packages, feeds, and their resulting configuration are described via simple shell scripts. These are simple and straightforward examples that are meant as a reusable asset for developers.|
 
 ## README.md Structure
 
@@ -271,6 +273,67 @@ as well as track how many times each app is being deployed.
 
 The D2B button should be included in the README file, as well as any blog posts/tutorials
 written on the sample app.
+
+## OpenWhisk Examples
+
+OpenWhisk Examples are fundamentally different then other Bluemix apps. They are much simpler -
+either one file or just a collection of scripts, and they are not deployed the way that Bluemix
+apps are deployed. For these reasons, OpenWhisk example repos do not need to include:
+
+  - [Design](#design)
+  - [Marketing Copy (large apps only)](#marketing-copy-large-apps-only)
+  - [Deployment Tracker](#deployment-tracker)
+  - [Deploy-to-Bluemix (D2B) Button](#deploy-to-bluemix-d2b-button)
+  - [CoreMetrics Links](#coremetrics-links)
+    - [How to View Raw Data](#how-to-view-raw-data)
+
+### OpenWhisk README.md Structure
+
+Because of the differences between OpenWhisk examples and Bluemix apps, they do not follow the
+same `README.md` structure. Specifically, the proposed format is the following (remember that
+these are just guidelines):
+
+  * **Overview** - This section includes the following:
+    * Explanation of the example and its purpose. Answer the questions:
+      * Why is this sample relevant to the target persona?
+      *	What purpose does this sample serve?
+      *	What does the sample do?
+
+  * **Accepted `param`s** - If the example is depicting an action, include:
+    * A description of the accepted `param` inputs for this action
+
+  * **Creating the Action on OpenWhisk** - If the example is depicting an action, include:
+    * Any required additional knowledge on how to create this action
+    * An example script and server response for creating the action
+
+  * **Invoking the Action on OpenWhisk** - If the example is depicting an action, include:
+    * An example script showing action invocation as well as server response
+    * Include examples for all possible `param`s
+
+  * **Package, Feed, Event, or Trigger Creation** - For these examples, include:
+    * Creation scripts and any additional knowledge required to do so
+
+  * **Architecture Diagram** - If the example is more than just one action or one event, etc:
+    * Describe how the action(s), event(s), feed(s), package(s) are all "wired together"
+    * Include a diagram depicting this "wiring"
+
+### OpenWhisk Discovery JSON Document
+
+For more information on the "why", read - [Discovery JSON Document](#discovery-json-document).
+
+The fields to define are:
+
+  - discover (boolean): denotes whether the project should be considered by the content microservice
+  - type (string): degree of complexity - these are all `openwhisk`
+
+The rest as defined in [Discovery JSON Document](#discovery-json-document) should be left blank
+
+```json
+{
+  "discover": true,
+  "type": "openwhisk"
+}
+```
 
 ## Discovery JSON Document
 
