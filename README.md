@@ -299,6 +299,10 @@ these are just guidelines):
       *	What purpose does this sample serve?
       *	What does the sample do?
 
+    * **Architecture Diagram** - If the example is more than just one action or one event, etc:
+      * Describe how the action(s), event(s), feed(s), package(s) are all "wired together"
+      * Include a diagram depicting this "wiring"
+
   * **Accepted `param`s** - If the example is depicting an action, include:
     * A description of the accepted `param` inputs for this action
 
@@ -312,10 +316,6 @@ these are just guidelines):
 
   * **Package, Feed, Event, or Trigger Creation** - For these examples, include:
     * Creation scripts and any additional knowledge required to do so
-
-  * **Architecture Diagram** - If the example is more than just one action or one event, etc:
-    * Describe how the action(s), event(s), feed(s), package(s) are all "wired together"
-    * Include a diagram depicting this "wiring"
 
 ### OpenWhisk Discovery JSON Document
 
