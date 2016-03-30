@@ -140,6 +140,52 @@ Because of the differences between OpenWhisk examples and Bluemix apps, they do 
     * **Architecture Diagram** - If the example is more than just one action or one event, etc:
       * Describe how the action(s), event(s), feed(s), package(s) are all "wired together"
       * Include a diagram depicting this "wiring"
+      * Use a tool such as [Gravizo](http://www.gravizo.com/) to embed diagram into the `README.md`. 
+      Find other usage examples for Gravizo [here](https://github.com/IBM-Bluemix/openwhisk-darkvisionapp/blob/master/README.md), [there](https://github.com/IBM-Bluemix/openwhisk-visionapp/blob/master/README.md).
+      
+```
+![Architecture](http://g.gravizo.com/g?
+  digraph G {
+    node [fontname = "helvetica"]
+    rankdir=LR
+    /* stores a video */
+    user -> cloudant [label="Uploads a video"]
+    /* cloudant change sent to openwhisk */
+    cloudant -> openwhisk [label="Notifies a change"]
+    /* openwhisk triggers the extractor */
+    openwhisk -> extractor [label="Invokes extractor action"]
+    /* extractor produces image frames */
+    extractor -> frames [label="Produces frames"]
+    /* frames are stored in cloudant */
+    frames -> cloudant [label="Persists frames"]
+    /* styling */
+    frames [label="Image Frames"]
+    cloudant [shape=circle style=filled color="%234E96DB" fontcolor=white label="Cloudant"]
+    openwhisk [shape=circle style=filled color="%2324B643" fontcolor=white label="OpenWhisk"]
+  }
+)
+```
+      
+![Architecture](http://g.gravizo.com/g?
+  digraph G {
+    node [fontname = "helvetica"]
+    rankdir=LR
+    /* stores a video */
+    user -> cloudant [label="Uploads a video"]
+    /* cloudant change sent to openwhisk */
+    cloudant -> openwhisk [label="Notifies a change"]
+    /* openwhisk triggers the extractor */
+    openwhisk -> extractor [label="Invokes extractor action"]
+    /* extractor produces image frames */
+    extractor -> frames [label="Produces frames"]
+    /* frames are stored in cloudant */
+    frames -> cloudant [label="Persists frames"]
+    /* styling */
+    frames [label="Image Frames"]
+    cloudant [shape=circle style=filled color="%234E96DB" fontcolor=white label="Cloudant"]
+    openwhisk [shape=circle style=filled color="%2324B643" fontcolor=white label="OpenWhisk"]
+  }
+)
 
   * **Accepted `param`s** - If the example is depicting an action, include:
     * A description of the accepted `param` inputs for this action
