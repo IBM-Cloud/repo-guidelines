@@ -8,8 +8,7 @@ Note that at the moment, these are evolving and fluid guidelines. There is conti
 
 ---
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- START doctoc generated TOC - DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Value Add](#value-add)
@@ -46,14 +45,11 @@ Examples of value-add include (but are not limited to):
 
 ## Sample Types
 
-Through user research, we have concluded that our target personas are looking for distinctly 
-different types of sample applications. It is important to recognize which category your app 
-falls into when designing, developing, and promoting it. Here is how it breaks down in order 
-of increasing complexity:
+Through user research, we have concluded that our target personas are looking for distinctly different types of sample applications. It is important to recognize which category your app falls into when designing, developing, and promoting it. Here is how it breaks down in order of increasing complexity:
 
 |Type                  |Persona                                      |Description  |
 |:--------------------:|:-------------------------------------------:|:-----------:|
-|Hello World                |Developers                                   |These apps are simple, straightforward implementations of a Bluemix service or core feature. They are strictly meant as a reusable asset for developers. No “Deploy to Bluemix” necessary.|
+|Hello World                |Developers                                   |These apps are simple, straightforward implementations of a Bluemix service or core feature. They are strictly meant as a reusable asset for developers, however their documentation must still be clear and UI (if applicable) differentiated from existing assets.|
 |Sample App            |Developers, Solution Architects              |These are the apps that exhibit Bluemix use cases, with 1-3 services and a beautiful front end. Blog posts with tutorials normally accompany these and they are used to show off at conferences and large external events.|
 |Demo                  |Tech Sellers, Developers, Solution Architects|Fully fleshed out samples that showcase vital enterprise functionality within a Bluemix app or multiple apps. They generally have accompanying scripts for pitching to enterprise clients with live-coding portions. For a guide on Bluemix demo strategy, please see the [overview on Release Blueprints](https://releaseblueprints.ibm.com/display/CLOUDOE/Bluemix+Demo+Strategy).|
 |Reference Architecture|Tech Sellers/Solution Architects             |Built by the Guided Experience and Reference Architecture teams, these apps demonstrate enterprise pattern solutions using Bluemix. They generally involve multiple apps and services communicating with each other using various protocols in order to make up a larger system.|
@@ -78,7 +74,7 @@ Remember that this is only a guideline, not a rigid structure. The included sect
   
   * **Application Requirements** (if any): List any requirements for using the app, like browser and version. Include an architecture diagram if the app is anything more than a Demo.
   
-  * **Run the app on Bluemix**: If the sample app is anything more than a “Hello World”, include instructions on how to deploy a new instance to Bluemix.
+  * **Run the app on Bluemix**: All samples should lay out step by step instructions on how to deploy a new instance to Bluemix.
 
 	  * **Deployment Instructions**: Instructions on how to deploy the app to Bluemix after cloning the repo. Assume little to no prior Bluemix experience.
 	    * Needs to have sanity checks at about every 20 steps
@@ -263,13 +259,15 @@ Copyright 2016 IBM Corp.
 ```
 Be sure to replace Apache License, Version 2.0 with the license that you are using, if different.
 
-**Dependencies** - Do not include dependencies (i.e. npm packages) in your repository to avoid licensing issues. Always declare dependencies in such a way that the user is able to download them using dependency management. If you absolutely need to include dependency source code in your project, ensure they are using acceptable licenses. 
+**Dependencies** - Do not include dependencies (i.e. npm packages) in your repository to avoid licensing issues. Always declare dependencies in such a way that the user is able to download them using dependency management. If you absolutely need to include dependency source code in your project, ensure they are using acceptable licenseses. 
 
 ## Design
 
-To aid the effort in building consistency across our apps, developers should follow design practices laid out in the [Bluemix Component Library](https://github.ibm.com/Bluemix/bluemix-components). The library includes design principles and UI components used across the Bluemix brand. Of course, there are exceptions to using elements in the pattern library; we want our apps to look unique in their own right. Just be aware that the more synchronous our sample apps are, the more we deliver a seamless experience across our sample app portfolio.
+To aid the effort in building consistency andcross our apps, developers should follow the design guidelines laid out by their respective design team. For instance, Bluemix maintains a [design system](http://design-system.stage1.mybluemix.net/) that enables developers to leverage our design principles and elements from our [component library](https://github.ibm.com/Bluemix/bluemix-components). These assets empower developers to design and build experiences that contribute to our united platform without needing direct input from designers. If you are not familiar with your division's design guidelines, feel free to reach out to your friendly, neighborhood designer!
 
-Note: As of this update, the design team is working on an design guide that will demonstrate this component library and serve as an implementation example. Look forward to future updates for this design guide.
+Of course, there are exceptions to using elements in the pattern library; we want our apps to look unique in their own right. Just be aware that the more synchronous our sample apps are with the brand, the more we deliver a seamless experience across our sample app portfolio.
+
+**Note**: As the guides state, they are always changing and adapting to new design and FED standards. Look forward to future updates in the design guidelines and components.
 
 ## Architecture Diagram
 
@@ -288,9 +286,10 @@ The Bluemix developer and community building lead, Dan Kehn (kehn at us.ibm.com)
 ## Deployment Tracker
 
 In order to facilitate the measurement of success of our sample apps, the greater developer advocate team has built a tool to track the deployment of our Cloud Foundry sample apps. See the following GitHub repositories for instructions on how to implement the deployment tracker into your:
-  * [Node.js App](https://github.com/IBM-Bluemix/cf-deployment-tracker-client-node)
-  * [Java App](https://github.com/IBM-Bluemix/cf-deployment-tracker-client-java)
-  * [Go App](https://github.com/IBM-Bluemix/cf_deployment_tracker_client_go)
+
+* [Node.js App](https://github.com/IBM-Bluemix/cf-deployment-tracker-client-node)
+* [Java App](https://github.com/IBM-Bluemix/cf-deployment-tracker-client-java)
+* [Go App](https://github.com/IBM-Bluemix/cf_deployment_tracker_client_go)
 
 It is also required that you include the privacy notice in your README when you implement the deployment tracker.
 
