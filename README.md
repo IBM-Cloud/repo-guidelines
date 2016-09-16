@@ -33,7 +33,7 @@ Note that at the moment, these are evolving and fluid guidelines. There is conti
 
 ## Value Add
 
-Any demos placed within the IBM Bluemix GitHub organization need to be reviewed to ensure they add value to the overall repository. This is needed to guarantee superior quality projects and to discourage the flooding of the repo with duplicate content. Optimally, this review will be conducted before development on the application has even begun.
+Any new samples or demos in the IBM Bluemix GitHub organization need to be reviewed to ensure they add value to the overall repository. This is needed to guarantee superior quality projects and to discourage the flooding of the repo with duplicate content. Optimally, this review will be conducted before development of the application has even begun.
 
 Examples of value-add include (but are not limited to):
 
