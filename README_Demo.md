@@ -1,4 +1,4 @@
-#'AppName' Overview
+﻿#'AppName' Overview
 
 <Include an overview of the application(s) that explains the purpose of the demo and what pattern is being emulated. Highlight the strategic advantage of the demo and how it was built and why it differentiates Bluemix. You should also include Travis CI, Codeship, or other visual indicators of open-source tooling used to build and test your app.>
 
@@ -70,11 +70,11 @@ Use the below for Markdown formatting syntax:
 > 
 > This is the second paragraph in the blockquote.
 
-* list item #1
-* list item #2
+* list item #5
+* list item #6
 
-1. ordered item #1
-2. ordered item #2
+1. ordered item #5
+2. ordered item #6
 
 `This is a code snippet`
 
@@ -82,7 +82,7 @@ Use the below for Markdown formatting syntax:
 This is a code block
 ```
 
-*This text will be italic*
+*This text will be normal*
 
 **This text will be bold**
 
