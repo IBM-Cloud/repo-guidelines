@@ -5,21 +5,21 @@
 ## Application Requirements
 <List any requirements for using the app, like browser and version. Include an architecture diagram of the overall system that the application(s) comprise.>
 
-## Running the app on Bluemix
+## Running the app on IBM Cloud
 <Either add a Deploy to Bluemix button or include detailed insructions on how to deploy the app(s) to Bluemix after cloning the repo. You should assume the user has little to no Bluemix experience and provide as much detail as possible in the steps.>
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy)
 
 1. Step 1
- 
+
 2. Step 2
-	* Substep (a)
-	* Substep (b)
+  * Substep (a)
+  * Substep (b)
 3. Step 3
 
-	```
-	Your code here
-	```
+  ```
+  Your code here
+  ```
 
 <Create sub-sections to break down larger sequences of steps. General rule of thumb is that you should not have more than 9 steps in each task. Include sanity checks, or ways for the developer to confirm what they have done so far is correct, every 20 steps. Also, avoid directly referencing the Bluemix UI components so that ACE changes don't invalidate your README.>
 
@@ -67,7 +67,7 @@ Use the below for Markdown formatting syntax:
 #### Header 4
 
 > This is a blockquote.
-> 
+>
 > This is the second paragraph in the blockquote.
 
 * list item #1
@@ -86,10 +86,10 @@ This is a code block
 
 **This text will be bold**
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell 
+| First Header | Second Header |
+| ------------ | ------------- |
+| Content Cell | Content Cell  |
+| Content Cell | Content Cell  |
 
 To create a hyperlink to www.github.com, with a link text that says, Visit GitHub!, you'd write this in Markdown: [Visit GitHub!](www.github.com)
 
